@@ -52,7 +52,7 @@ const Card = (props) => {
         playBtn={true}
         playing={isPlaying}
         onClick={() => {
-          const audio = document.getElementsByClassName('riff')[props.riff]; // querySelector don't seem to work
+          const audio = document.getElementsByClassName('riff')[props.riff]; // querySelector doesn't seem to work
           audio.onended = () => {
             setPlaying(isPlaying);
           };

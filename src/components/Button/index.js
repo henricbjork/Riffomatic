@@ -31,7 +31,7 @@ const Button = styled.div`
     props.addRiffBtn &&
     `
     width: 104px;
-    height: 52px;
+    height: 37px;
     background: #FFCF55;
     border-radius: 20px;
     display: flex;
@@ -41,12 +41,14 @@ const Button = styled.div`
     font-size: 14px;
     font-weight: bold;
     letter-spacing: 1px;
-     
-    a {
-      text-decoration: none;
-      color: white;
-    }
+    transition: .1s;
 
+    &:hover {
+      height: 40px;
+      width: 110px;
+      font-size: 15px;
+      background: #FFD978;
+    }
   `}
 
 `;

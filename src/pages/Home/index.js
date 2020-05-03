@@ -21,6 +21,10 @@ const Container = styled.div`
   .title {
     margin: 25px;
   }
+  a {
+    text-decoration: none;
+    color: white;
+  }
   .riffList {
     margin-top: 20px;
     width: 100%;
@@ -50,9 +54,9 @@ const Home = () => {
     <Container>
       <Logo className='logo' />
       <Title className='title' />
-      <Button addRiffBtn={true}>
-        <a href='https://be.contentful.com/login'>Add</a>
-      </Button>
+      <a href='https://be.contentful.com/login'>
+        <Button addRiffBtn={true}>Add</Button>
+      </a>
       <section className='riffList'>
         {riffs &&
           riffs.map((riff, i) => {
