@@ -43,10 +43,10 @@ const Button = styled.div`
     font-size: 14px;
     font-weight: bold;
     letter-spacing: 1px;
-    transition: .13s;
+    transition: .1s;
 
     &:hover {
-      height: 35px;
+      height: 34px;
       width: 110px;
       font-size: 15px;
       background: #FFD978;

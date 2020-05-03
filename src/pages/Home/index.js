@@ -10,7 +10,7 @@ const Container = styled.div`
   height: 667px;
   width: 375px;
   padding: 10px 10px 0px 10px;
-  background: #3e3b3b;
+  background: #333131;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,9 +39,7 @@ const Container = styled.div`
 const Home = () => {
   const [riffs, setRiffs] = React.useState(null);
 
-  if (!riffs) {
-    console.log('loading');
-  }
+  !riffs ? console.log('Loading..') : console.log('Page loaded');
 
   React.useEffect(() => {
     client
