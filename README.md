@@ -1,7 +1,7 @@
 # Riffomatic
 <img src="https://media.giphy.com/media/26u44niJ5hJPXoN7W/giphy.gif" width="100%">
 
->Riffomatic is a platform for sharing audio clips with the main idea being able to share song ideas with your collaborators.
+>[Riffomatic](https://riffomatic.netlify.app/) is a platform for sharing audio clips with the main idea being able to share song ideas with your collaborators.
 Content is uploaded via the headless CMS [Contentful](https://www.contentful.com/) and is then displayed on the Riffomatic website. 
 
 # Preview
