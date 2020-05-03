@@ -50,7 +50,9 @@ const Home = () => {
     <Container>
       <Logo className='logo' />
       <Title className='title' />
-      <Button addRiffBtn={true}>Add Riff</Button>
+      <Button addRiffBtn={true}>
+        <a href='https://be.contentful.com/login'>Add</a>
+      </Button>
       <section className='riffList'>
         {riffs &&
           riffs.map((riff, i) => {

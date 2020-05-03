@@ -38,6 +38,15 @@ const Button = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+     
+    a {
+      text-decoration: none;
+      color: white;
+    }
 
   `}
 

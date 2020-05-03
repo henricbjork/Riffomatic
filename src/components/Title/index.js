@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const H1 = styled.h1`
-  font-family: roboto;
+  font-family: sans-serif;
   font-style: normal;
   font-size: 24px;
   color: #fff;
