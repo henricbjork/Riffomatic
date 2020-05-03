@@ -12,12 +12,14 @@ const Button = styled.div`
   position: absolute;
   right: 0px;
 
-  border-color: transparent transparent transparent #c4c4c4;
+  border-color: transparent transparent transparent #E5E5E5;
   transition: 100ms all ease;
   cursor: pointer;
 
   border-style: solid;
   border-width: 15px 0 15px 15px;
+
+  
   `}
 
   ${(props) =>
@@ -31,7 +33,7 @@ const Button = styled.div`
     props.addRiffBtn &&
     `
     width: 104px;
-    height: 37px;
+    height: 32px;
     background: #FFCF55;
     border-radius: 20px;
     display: flex;
@@ -41,10 +43,10 @@ const Button = styled.div`
     font-size: 14px;
     font-weight: bold;
     letter-spacing: 1px;
-    transition: .1s;
+    transition: .13s;
 
     &:hover {
-      height: 40px;
+      height: 35px;
       width: 110px;
       font-size: 15px;
       background: #FFD978;

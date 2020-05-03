@@ -7,13 +7,14 @@ import Title from '../../components/Title';
 import Button from '../../components/Button';
 
 const Container = styled.div`
-  height: 660px;
-  width: 370px;
+  height: 667px;
+  width: 375px;
   padding: 10px 10px 0px 10px;
   background: #3e3b3b;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 
   .logo {
     margin-top: 25px;
@@ -26,10 +27,12 @@ const Container = styled.div`
     color: white;
   }
   .riffList {
-    margin-top: 20px;
     width: 100%;
-    height: 100%;
+    height: 430px;
+    padding: 10px;
     overflow: scroll;
+    position: absolute;
+    bottom: 0;
   }
 `;
 
