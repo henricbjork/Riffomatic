@@ -16,13 +16,13 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
 
-  .test {
+  .header {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
     height: 180px;
-    margin-top: 25px;
+    margin-top: 50px;
 
     .add-btn {
       position: absolute;
@@ -38,7 +38,7 @@ const Container = styled.div`
     color: #fff;
   }
   .riffList {
-    margin-top: 25px;
+    margin-top: 35px;
     width: 100%;
     max-height: 70vh;
     overflow: scroll;
@@ -63,7 +63,7 @@ const Home = () => {
 
   return (
     <Container>
-      <div className='test'>
+      <div className='header'>
         <Logo className='logo' />
         <Title className='title' />
         <AddButton
