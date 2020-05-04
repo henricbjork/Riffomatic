@@ -4,7 +4,8 @@ import styled from 'styled-components';
 const H1 = styled.h1`
   font-family: sans-serif;
   font-style: normal;
-  font-size: 24px;
+  font-size: 28px;
+  letter-spacing: 1.5px;
   color: #fff;
   text-transform: uppercase;
 `;
