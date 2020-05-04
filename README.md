@@ -5,7 +5,8 @@
 Content is uploaded via the headless CMS [Contentful](https://www.contentful.com/) and is then displayed on the Riffomatic website. 
 
 # Preview
-<img width="373" alt="Screenshot 2020-05-03 at 13 57 48" src="https://user-images.githubusercontent.com/51784708/80913749-667ec580-8d47-11ea-9bf6-12d10428000a.png">
+<img width="503" alt="Screenshot 2020-05-04 at 20 15 50" src="https://user-images.githubusercontent.com/51784708/80999012-3b2dd080-8e44-11ea-9981-00e7b74bc508.png">
+
 
 # Instructions
 In the project directory, you can run:
