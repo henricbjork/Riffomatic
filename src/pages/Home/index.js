@@ -7,7 +7,7 @@ import Title from '../../components/Title';
 import Button from '../../components/Button';
 
 const Container = styled.div`
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   padding: 10px 10px 0px 10px;
   background: #333131;
