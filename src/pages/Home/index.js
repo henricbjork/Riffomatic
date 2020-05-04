@@ -40,7 +40,7 @@ const Container = styled.div`
   .riffList {
     margin-top: 25px;
     width: 100%;
-    height: 70vh;
+    max-height: 70vh;
     overflow: scroll;
   }
 `;
