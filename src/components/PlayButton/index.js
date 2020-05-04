@@ -2,9 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Button = styled.div`
-  ${(props) =>
-    props.playBtn &&
-    `
   border: 0;
   background: transparent;
   box-sizing: border-box;
@@ -13,15 +10,12 @@ const Button = styled.div`
   position: absolute;
   right: 0px;
 
-  border-color: transparent transparent transparent #E5E5E5;
+  border-color: transparent transparent transparent #e5e5e5;
   transition: 100ms all ease;
   cursor: pointer;
 
   border-style: solid;
   border-width: 15px 0 15px 15px;
-
-  
-  `}
 
   ${(props) =>
     props.playing &&
@@ -32,6 +26,8 @@ const Button = styled.div`
 `;
 
 const PlayButton = (props) => {
-  return <Button className={props.className}></Button>;
+  return (
+    <Button className={props.className} onClick={props.handleClick}></Button>
+  );
 };
 export default PlayButton;

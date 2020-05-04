@@ -8,32 +8,40 @@ import AddButton from '../../components/AddButton';
 import { navigate } from '@reach/router';
 
 const Container = styled.div`
-  min-height: 812px;
-  width: 375px;
+  min-height: 100vh;
+  width: 100vw;
   padding: 10px 10px 0px 10px;
   background: #333131;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
 
-  .logo {
-    margin-top: 80px;
+  .test {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 180px;
+    margin-top: 25px;
+
+    .add-btn {
+      position: absolute;
+      bottom: 0;
+    }
   }
+
   .title {
     margin: 25px;
   }
   a {
     text-decoration: none;
-    color: white;
+    color: #fff;
   }
   .riffList {
+    margin-top: 25px;
     width: 100%;
-    height: 530px;
-    padding: 10px;
+    height: 70vh;
     overflow: scroll;
-    position: absolute;
-    bottom: 0;
   }
 `;
 
@@ -58,12 +66,10 @@ const Home = () => {
       <div className='test'>
         <Logo className='logo' />
         <Title className='title' />
-        {/* <a href='https://be.contentful.com/login'> */}
         <AddButton
           className='add-btn'
           handleClick={() => navigate(loginPage)}
         />
-        {/* </a> */}
       </div>
       <section className='riffList'>
         {riffs &&

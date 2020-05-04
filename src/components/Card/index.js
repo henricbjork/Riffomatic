@@ -66,9 +66,10 @@ const Card = (props) => {
       <audio className='riff' src={props.audio} muted={!isPlaying}></audio>
 
       {/* <PlayButton
+        className='play-btn'
         playBtn={true}
         playing={isPlaying}
-        onClick={() => {
+        handleClick={() => {
           const audio = document.getElementsByClassName('riff')[props.riff]; // querySelector doesn't seem to work
           audio.onended = () => {
             setPlaying(isPlaying);
