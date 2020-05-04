@@ -21,8 +21,8 @@ const Container = styled.div`
     flex-direction: column;
     align-items: center;
     position: relative;
-    height: 180px;
-    margin-top: 50px;
+    height: 200px;
+    margin-top: 70px;
 
     .add-btn {
       position: absolute;
@@ -38,7 +38,7 @@ const Container = styled.div`
     color: #fff;
   }
   .riffList {
-    margin-top: 35px;
+    margin-top: 45px;
     width: 100%;
     max-height: 70vh;
     overflow: scroll;
