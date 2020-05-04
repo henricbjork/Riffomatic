@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Button = styled.div`
-  width: 104px;
-  height: 32px;
+  width: 114px;
+  height: 37px;
   background: #ffcf55;
   border-radius: 20px;
   display: flex;
@@ -17,8 +17,8 @@ const Button = styled.div`
   color: white;
 
   &:hover {
-    height: 34px;
-    width: 110px;
+    height: 38px;
+    width: 117px;
     font-size: 15px;
     background: #ffd978;
   }
