@@ -78,7 +78,7 @@ const Home = () => {
               <Card
                 key={i}
                 riff={i}
-                src={riff.fields.image.fields.file.url}
+                src={riff.fields.image.fields.file.url + `?w=100&h=100`}
                 audio={riff.fields.audio.fields.file.url}
                 title={riff.fields.title}
                 user={riff.fields.user}
