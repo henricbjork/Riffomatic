@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Button from '../Button/index';
+import PlayButton from '../PlayButton/index';
 
 const CardStyled = styled.div`
   position: relative;
@@ -9,6 +9,17 @@ const CardStyled = styled.div`
   align-items: center;
   overflow: hidden;
   margin-bottom: 3px;
+  transition: background-color 0.1s ease;
+
+  &:hover {
+    background: #666666;
+  }
+
+  ${(props) =>
+    props.active &&
+    `
+    background: #666666;
+    `}}
 
   p {
     color: #C4C4C4;
@@ -38,7 +49,17 @@ const Card = (props) => {
   const [isPlaying, setPlaying] = React.useState(false);
 
   return (
-    <CardStyled>
+    <CardStyled
+      active={isPlaying}
+      onClick={() => {
+        const audio = document.getElementsByClassName('riff')[props.riff]; // querySelector doesn't seem to work
+        audio.onended = () => {
+          setPlaying(isPlaying);
+        };
+        isPlaying ? audio.pause() : audio.play();
+        setPlaying(!isPlaying);
+      }}
+    >
       <div className='card__image'>
         <img src={props.src} alt='' />
       </div>
@@ -48,10 +69,11 @@ const Card = (props) => {
       </div>
       <audio className='riff' src={props.audio} muted={!isPlaying}></audio>
 
-      <Button
+      {/* <PlayButton
+        className='play-btn'
         playBtn={true}
         playing={isPlaying}
-        onClick={() => {
+        handleClick={() => {
           const audio = document.getElementsByClassName('riff')[props.riff]; // querySelector doesn't seem to work
           audio.onended = () => {
             setPlaying(isPlaying);
@@ -59,7 +81,7 @@ const Card = (props) => {
           isPlaying ? audio.pause() : audio.play();
           setPlaying(!isPlaying);
         }}
-      />
+      /> */}
     </CardStyled>
   );
 };
