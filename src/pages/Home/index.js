@@ -4,11 +4,12 @@ import Card from '../../components/Card';
 import styled from 'styled-components';
 import Logo from '../../components/Logo';
 import Title from '../../components/Title';
-import Button from '../../components/Button';
+import AddButton from '../../components/AddButton';
+import { navigate } from '@reach/router';
 
 const Container = styled.div`
-  min-height: 100vh;
-  width: 100vw;
+  min-height: 812px;
+  width: 375px;
   padding: 10px 10px 0px 10px;
   background: #333131;
   display: flex;
@@ -17,7 +18,7 @@ const Container = styled.div`
   position: relative;
 
   .logo {
-    margin-top: 25px;
+    margin-top: 80px;
   }
   .title {
     margin: 25px;
@@ -28,7 +29,7 @@ const Container = styled.div`
   }
   .riffList {
     width: 100%;
-    height: 430px;
+    height: 530px;
     padding: 10px;
     overflow: scroll;
     position: absolute;
@@ -38,6 +39,7 @@ const Container = styled.div`
 
 const Home = () => {
   const [riffs, setRiffs] = React.useState(null);
+  const loginPage = 'https://be.contentful.com/login';
 
   !riffs ? console.log('Loading..') : console.log('Page loaded');
 
@@ -53,11 +55,16 @@ const Home = () => {
 
   return (
     <Container>
-      <Logo className='logo' />
-      <Title className='title' />
-      <a href='https://be.contentful.com/login'>
-        <Button addRiffBtn={true}>Add</Button>
-      </a>
+      <div className='test'>
+        <Logo className='logo' />
+        <Title className='title' />
+        {/* <a href='https://be.contentful.com/login'> */}
+        <AddButton
+          className='add-btn'
+          handleClick={() => navigate(loginPage)}
+        />
+        {/* </a> */}
+      </div>
       <section className='riffList'>
         {riffs &&
           riffs.map((riff, i) => {

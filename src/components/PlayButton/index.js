@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from 'styled-components';
 
 const Button = styled.div`
@@ -28,30 +29,9 @@ const Button = styled.div`
     border-style: double;
     border-width: 0px 0 0px 18px;
   `}
-
-  ${(props) =>
-    props.addRiffBtn &&
-    `
-    width: 104px;
-    height: 32px;
-    background: #FFCF55;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    transition: .1s;
-
-    &:hover {
-      height: 34px;
-      width: 110px;
-      font-size: 15px;
-      background: #FFD978;
-    }
-  `}
-
 `;
-export default Button;
+
+const PlayButton = (props) => {
+  return <Button className={props.className}></Button>;
+};
+export default PlayButton;
