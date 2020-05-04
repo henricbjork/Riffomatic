@@ -68,20 +68,6 @@ const Card = (props) => {
         <p>{props.user}</p>
       </div>
       <audio className='riff' src={props.audio} muted={!isPlaying}></audio>
-
-      {/* <PlayButton
-        className='play-btn'
-        playBtn={true}
-        playing={isPlaying}
-        handleClick={() => {
-          const audio = document.getElementsByClassName('riff')[props.riff]; // querySelector doesn't seem to work
-          audio.onended = () => {
-            setPlaying(isPlaying);
-          };
-          isPlaying ? audio.pause() : audio.play();
-          setPlaying(!isPlaying);
-        }}
-      /> */}
     </CardStyled>
   );
 };
