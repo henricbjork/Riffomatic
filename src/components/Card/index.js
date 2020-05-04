@@ -11,6 +11,10 @@ const CardStyled = styled.div`
   margin-bottom: 3px;
   transition: background-color 0.1s ease;
 
+  &:hover {
+    background: #666666;
+  }
+
   ${(props) =>
     props.active &&
     `
