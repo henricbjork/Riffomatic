@@ -22,7 +22,7 @@ const Container = styled.div`
     align-items: center;
     position: relative;
     height: 200px;
-    margin-top: 70px;
+    margin-top: 60px;
 
     .add-btn {
       position: absolute;
