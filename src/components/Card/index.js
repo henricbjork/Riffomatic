@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import PlayButton from '../PlayButton/index';
 
 const CardStyled = styled.div`
   position: relative;
